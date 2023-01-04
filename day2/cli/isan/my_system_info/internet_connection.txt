@@ -1,0 +1,11 @@
+# ping www.google.com -t -n 3
+
+Pinging www.google.com [2404:6800:4003:c03::69] with 32 bytes of data:
+Reply from 2404:6800:4003:c03::69: time=27ms
+Reply from 2404:6800:4003:c03::69: time=80ms
+Reply from 2404:6800:4003:c03::69: time=27ms
+
+Ping statistics for 2404:6800:4003:c03::69:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 27ms, Maximum = 80ms, Average = 44ms

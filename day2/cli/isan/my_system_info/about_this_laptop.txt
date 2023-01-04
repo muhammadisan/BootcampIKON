@@ -1,0 +1,3 @@
+# echo "My username: $(whoami)\nWith host: $(uname -a)"
+My username: muhammadisan
+With host: Linux DESKTOP-T1SRJUU 5.15.79.1-microsoft-standard-WSL2 #1 SMP Wed Nov 23 01:01:46 UTC 2022 x86_64 GNU/Linux
