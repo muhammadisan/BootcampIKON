@@ -1,0 +1,45 @@
+.form-registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form-input label {
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: -7px;
+    font-weight: 500;
+    /* border: solid; */
+}
+
+.form-input input,
+select {
+    width: 100vh;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    /* border: solid; */
+}
+
+.form-input textarea {
+    width: 100vh;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    /* border: solid; */
+}
+
+.error-message {
+    color: #bf1650;
+    margin: -10px 0 10px 10px;
+}
+
+.error-message::before {
+    display: inline;
+    content: "⚠ ";
+}
