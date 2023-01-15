@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "5a9ee5dd-b6eb-4326-be9f-1667aaef1cd3",
+		"name": "Task IKON",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12662547"
+	},
+	"item": [
+		{
+			"name": "newsapi 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{newsapi_url}}/everything?q=apple&from=2023-01-11&to=2023-01-11&sortBy=popularity&apiKey={{newsapi_key}}&languange=en&pageSize=3",
+					"host": [
+						"{{newsapi_url}}"
+					],
+					"path": [
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "apple"
+						},
+						{
+							"key": "from",
+							"value": "2023-01-11"
+						},
+						{
+							"key": "to",
+							"value": "2023-01-11"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "{{newsapi_key}}"
+						},
+						{
+							"key": "languange",
+							"value": "en"
+						},
+						{
+							"key": "pageSize",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsapi 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{newsapi_url}}everything?q=jokowi&from=2022-12-12&sortBy=publishedAt&apiKey={{newsapi_key}}&pageSize=2",
+					"host": [
+						"{{newsapi_url}}everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "jokowi"
+						},
+						{
+							"key": "from",
+							"value": "2022-12-12"
+						},
+						{
+							"key": "sortBy",
+							"value": "publishedAt"
+						},
+						{
+							"key": "apiKey",
+							"value": "{{newsapi_key}}"
+						},
+						{
+							"key": "pageSize",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsapi 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{newsapi_url}}/v2/top-headlines?country=id&category=technology&apiKey={{newsapi_key}}&pageSize=1",
+					"host": [
+						"{{newsapi_url}}"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "id"
+						},
+						{
+							"key": "category",
+							"value": "technology"
+						},
+						{
+							"key": "apiKey",
+							"value": "{{newsapi_key}}"
+						},
+						{
+							"key": "pageSize",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsapi 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{newsapi_url}}/top-headlines?sources=techcrunch&apiKey={{newsapi_key}}&pageSize=5",
+					"host": [
+						"{{newsapi_url}}"
+					],
+					"path": [
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "sources",
+							"value": "techcrunch"
+						},
+						{
+							"key": "apiKey",
+							"value": "{{newsapi_key}}"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsapi 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{newsapi_url}}/everything?apiKey={{newsapi_key}}&q=traveloka",
+					"host": [
+						"{{newsapi_url}}"
+					],
+					"path": [
+						"everything"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "apiKey",
+							"value": "{{newsapi_key}}"
+						},
+						{
+							"key": "q",
+							"value": "traveloka"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swapi 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{swapi_url}}/people",
+					"host": [
+						"{{swapi_url}}"
+					],
+					"path": [
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swapi 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{swapi_url}}/planets",
+					"host": [
+						"{{swapi_url}}"
+					],
+					"path": [
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swapi 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{swapi_url}}/films",
+					"host": [
+						"{{swapi_url}}"
+					],
+					"path": [
+						"films"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swapi 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{swapi_url}}/species",
+					"host": [
+						"{{swapi_url}}"
+					],
+					"path": [
+						"species"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swapi 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{swapi_url}}/vehicles",
+					"host": [
+						"{{swapi_url}}"
+					],
+					"path": [
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swapi 6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{swapi_url}}/starships",
+					"host": [
+						"{{swapi_url}}"
+					],
+					"path": [
+						"starships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swagger 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{swagger_url}}/user/1",
+					"host": [
+						"{{swagger_url}}"
+					],
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swagger 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"book_id\": 1234,\r\n  \"user_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{swagger_url}}/rent",
+					"host": [
+						"{{swagger_url}}"
+					],
+					"path": [
+						"rent"
+					]
+				},
+				"description": "Tidak dapat membuat data baru. Response nya sama terus"
+			},
+			"response": []
+		},
+		{
+			"name": "swagger 3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1234,\r\n  \"title\": \"Judul Buku Dua\",\r\n  \"isbn\": \"1-234-5678-9101112-13\",\r\n  \"writer\": \"Dr. Who\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{swagger_url}}/book/1234",
+					"host": [
+						"{{swagger_url}}"
+					],
+					"path": [
+						"book",
+						"1234"
+					]
+				},
+				"description": "Tidak bisa update"
+			},
+			"response": []
+		},
+		{
+			"name": "swagger 4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{swagger_url}}/user/1",
+					"host": [
+						"{{swagger_url}}"
+					],
+					"path": [
+						"user",
+						"1"
+					]
+				},
+				"description": "Tidak bisa delete"
+			},
+			"response": []
+		}
+	]
+}
