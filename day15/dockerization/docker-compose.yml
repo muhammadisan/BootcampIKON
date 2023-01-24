@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  product-service:
+    image: 'product-service:latest'
+    container_name: product-service
+    build:
+      context: product-service
+      dockerfile: Dockerfile
+    depends_on:
+      - product-db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://product-db:5432/product_db
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SERVER_PORT=8087
+    expose:
+      - "8087"
+    ports:
+      - "8087:8087"
+
+  product-db:
+    image: 'postgres:15-alpine'
+    container_name: product-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=product_db
+    volumes:
+      - product_db:/var/lib/postgresql/data
+    ports:
+      - "5438:5432"
+volumes:
+  product_db:
