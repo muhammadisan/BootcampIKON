@@ -6,8 +6,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @RestController
@@ -18,7 +17,7 @@ public class ProductController {
 
     @ApiOperation("Get all products info")
     @GetMapping("/")
-    public List<Product> getProducts() {
+    public Iterable<Product> getProducts() {
         return productService.getProducts();
     }
 
@@ -27,7 +26,7 @@ public class ProductController {
      */
     @ApiOperation("Get product info by id")
     @GetMapping("/{id}")
-    public Optional<Product> getProductById(@PathVariable Integer id) {
+    public Object getProductById(@PathVariable Integer id) {
         return productService.getProductById(id);
     }
 
@@ -45,7 +44,7 @@ public class ProductController {
 
     @ApiOperation("Delete product by id")
     @DeleteMapping("/{id}")
-    public void deleteProduct(@PathVariable Integer id) {
-        productService.deleteProduct(id);
+    public String deleteProduct(@PathVariable Integer id) {
+        return productService.deleteProduct(id);
     }
 }
